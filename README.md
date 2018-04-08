@@ -14,7 +14,7 @@ Default tags would be
 Admin will be able to add tags.
 
 ## Authentication
-Users will get authenticated using OAuth2 to Twitter and Devise. An Authenticated user will be able to click on the tags categorized by author-location, which will show them the timeline of tweets along with the map of the region (if its a valid location).
+Users will get authenticated using OAuth2 to Twitter and Devise. An Authenticated user will be able to click on the tags categorized, which will show them the timeline of tweets along with the map of the region (if its a valid location).
 
 ## Admin
 Admin will be able to manipulate data from the control panel. We are using active-admin for that purpose. 
@@ -40,6 +40,19 @@ Ruby version `2.4+` will be supported.
   $ rails db:create
   $ rails db:migrate
   $ rails db:seed
+```
+## whenever Commands
+```ruby
+  $ cd /my/app
+  $ bundle exec whenever
+  $ # View config/schedule.rb converted to cron syntax
+bundle exec whenever
+
+# Update crontab
+bundle exec whenever -i
+
+# Overwrite the whole crontab (be careful with this one!)
+bundle exec whenever -w
 ```
 
 * How to run the test suite
