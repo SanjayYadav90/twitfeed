@@ -1,16 +1,15 @@
 # TwitFeed  
 
-A Ruby on Rails based web app to find tweets on topics you choose. Just setup properly, TwitFeed will fetch tweets mentioning hash-tags set in database-table 'tags' once a day. Will display the Feeds in feed-Chart in the dashbaord. Any user Authenticated via Twitter will be able to see/browse the feed per Author-Location.
+A Ruby on Rails based web app to find tweets on topics you choose. TwitFeed will fetch tweets mentioning hash-tags set in database-table 'tags' once a day. Will display the Feeds in feed-Chart in the dashbaord. Any user Authenticated via Twitter will be able to done.
 
 ## Dashboard 
 
 
-It will periodically fetch tweets from Twitter about those topics and categorizes them according to the location 
+It will periodically fetch tweets from Twitter about those topics and categorizes them according 
 of the respective authors.
 
 Default tags would be
 - `#Cricket`
-- `#Football`
 
 Admin will be able to add tags.
 
@@ -33,7 +32,6 @@ Ruby version `2.4+` will be supported.
     - Cron is supposed to execute the rake task `lib/tasks/fetch_tweets_daily.rake` once every day
 
 ## Configuration
-  - [See this for configuring twitter for OAuth2](/doc/images/twitter_oauth_localhost.png)
   - Make sure you use URL `http://127.0.0.1:3000` or `http://locahost:3000`
   - Use `whenever --update-crontab` to update your cron tab for auto-fetching the tweets once a day
 
@@ -48,9 +46,6 @@ Ruby version `2.4+` will be supported.
 ```ruby
   $ rspec spec/
 ```
-
-### ERD
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/SanjayYadav90/twitfeed. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
