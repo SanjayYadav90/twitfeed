@@ -1,5 +1,4 @@
 # Fetches tweets since yesterday and loads to the database
-# Note: This process is slow, because it fetches GeoCoding info from the internet
 namespace :twitfeed do
   desc 'fetch tweets containing #hashtags every 12 hrs'
   task fetch: :environment do
