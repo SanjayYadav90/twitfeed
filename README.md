@@ -4,6 +4,8 @@ A Ruby on Rails based web app to find tweets on topics you choose. TwitFeed will
 
 ## Dashboard 
 
+## ScreenShot
+We have dashboard and twit page on `doc/images` fil, have a look.
 
 It will periodically fetch tweets from Twitter about those topics and categorizes them according 
 of the respective authors.
@@ -11,17 +13,14 @@ of the respective authors.
 Default tags would be
 - `#Cricket`
 
-Admin will be able to add tags.
+Admin will be able to add tags by using URL [http://localhost:3000/admin](http://localhost:3000/admin).
 
 ## Authentication
 Users will get authenticated using OAuth2 to Twitter and Devise. An Authenticated user will be able to click on the tags categorized, which will show them the timeline of tweets along with the map of the region (if its a valid location).
 
 ## Admin
 Admin will be able to manipulate data from the control panel. We are using active-admin for that purpose. 
-
-### How To Access
-- **Development**
-  - goto URL [http://localhost:3000/admin](http://localhost:3000/admin)
+  -goto URL [http://localhost:3000/admin](http://localhost:3000/admin)
 
 ## Ruby version
 Ruby version `2.4+` will be supported.
