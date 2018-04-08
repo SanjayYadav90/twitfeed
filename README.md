@@ -46,13 +46,11 @@ Ruby version `2.4+` will be supported.
   $ cd /my/app
   $ bundle exec whenever
   $ # View config/schedule.rb converted to cron syntax
-bundle exec whenever
-
-# Update crontab
-bundle exec whenever -i
-
-# Overwrite the whole crontab (be careful with this one!)
-bundle exec whenever -w
+    bundle exec whenever
+    # Update crontab
+    bundle exec whenever -i
+    # Overwrite the whole crontab (be careful with this one!)
+    bundle exec whenever -w
 ```
 
 * How to run the test suite
