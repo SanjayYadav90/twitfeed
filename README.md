@@ -4,11 +4,11 @@ A Ruby on Rails based web app to find tweets on topics you choose. TwitFeed will
 
 ## Dashboard 
 
-## ScreenShot
-We have dashboard and twit page on `doc/images` fil, have a look.
-
 It will periodically fetch tweets from Twitter about those topics and categorizes them according 
 of the respective authors.
+
+## ScreenShot
+We have dashboard and twit page on `doc/images` fil, have a look.
 
 Default tags would be
 - `#Cricket`

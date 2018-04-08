@@ -1,0 +1,65 @@
+header#top.header
+  .text-vertical-center
+    = image_tag 'logo.png', width: '100'
+    h1
+      | TwitFeed
+    h3
+      | Find what's New in Cricket World
+    br
+    - if current_admin_user.present?
+      = link_to admin_root_path, class: 'btn btn-dark btn-lg margin10all' do
+        i.fa.fa-dashboard
+        |  Goto Admin Panel
+    - else 
+
+      - if current_user.present?
+        = link_to dashboard_path, class: 'btn btn-dark btn-lg margin10all' do
+          i.fa.fa-dashboard
+          |  Goto Dashboard
+      - else
+        = link_to user_twitter_omniauth_authorize_path, class: 'btn btn-dark btn-lg margin10all bg-twitter-color' do
+          i.fa.fa-twitter
+          |  Just In Minute, Sign In with Twitter
+        br
+        = link_to user_session_path, class: 'btn btn-dark btn-lg margin10all bg-primary-color' do
+          i.fa.fa-user
+          |  Just Sign In
+        
+
+        = link_to new_admin_user_session_path, target: :_blank, class: 'btn btn-dark btn-lg margin10all bg-facebook-color' do
+          i.fa.fa-user
+          |  Admin Sign In
+
+
+.container
+  .row
+    .col-lg-10.col-lg-offset-1.text-center
+      h4
+        strong
+          | Find #Me
+      p
+        | New Ashok Nagar
+        br
+        | New Delhi, 110096
+      ul.list-unstyled
+        li
+          i.fa.fa-phone.fa-fw
+          |  +91-123 456 7890
+        li
+          i.fa.fa-envelope-o.fa-fw
+          a[href="mailto:twitfeed@example.com"]
+            | info@twitfeed.in
+      br
+      ul.list-inline
+        li
+          a[href="#"]
+            i.fa.fa-facebook.fa-fw.fa-3x
+        li
+          a[href="#"]
+            i.fa.fa-twitter.fa-fw.fa-3x
+        li
+          a[href="#"]
+            i.fa.fa-dribbble.fa-fw.fa-3x
+      hr.small
+      p.text-muted
+        | Copyright © twitfeed #{Date.today.year}

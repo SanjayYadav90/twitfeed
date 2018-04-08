@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" <!--320-->
+    title
+      | TwitFeed
+    = csrf_meta_tags
+    = stylesheet_link_tag    'static', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'static', 'data-turbolinks-track': 'reload'
+    link href="/favicon.ico" rel="shortcut icon"
+  body
+    header#top.header
+      .text-vertical-center
+        = image_tag 'logo.png', width: '100'
+        h1
+          | TwitFeed
+        h3
+          | Find what's TwitFeed
+        br
+        hr
+        .parent
+          .align-left.display-table.margin-auto.text-left
+            = yield

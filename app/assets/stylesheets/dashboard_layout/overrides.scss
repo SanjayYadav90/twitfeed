@@ -1,0 +1,41 @@
+@media (min-width: 767px) and ( max-width: 1391px) {
+  .timeline:before{
+    right: 80px;
+    left: inherit;
+  }
+  .timeline > li > .timeline-badge{
+    right: 55px;
+    left: inherit;
+  }
+  .timeline > li > .timeline-panel {
+    float: left;
+    position: relative;
+    width: calc(80%);
+    width: -moz-calc(80%);
+    width: -webkit-calc(80%);
+    padding: 20px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+}
+@media (max-width: 767px) {
+  ul.timeline:before {
+    left: 40px;
+  }
+  ul.timeline > li > .timeline-panel {
+    width: calc(74%);
+    width: -moz-calc(74%);
+    width: -webkit-calc(74%);
+  }
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: font-url('fontawesome-webfont.eot?v=4.3.0');
+  src: font-url('fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), font-url('fontawesome-webfont.woff2?v=4.3.0') format('woff2'), font-url('fontawesome-webfont.woff?v=4.3.0') format('woff'), font-url('fontawesome-webfont.ttf?v=4.3.0') format('truetype'), font-url('fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

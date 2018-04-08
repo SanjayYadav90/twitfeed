@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" <!--320-->
+    title
+      | TwitFeed
+    = csrf_meta_tags
+    = stylesheet_link_tag    'static', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'static', 'data-turbolinks-track': 'reload'
+    link href="/favicon.ico" rel="shortcut icon"
+  body
+    = yield
